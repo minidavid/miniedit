@@ -1,0 +1,246 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg, rgba(1,1,1) 0%, #FFFFFF 100%);
+}
+
+
+
+
+
+
+.Wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.Sidebar {
+    position: fixed;
+        
+    background: repeating-linear-gradient(
+        -55deg,
+        #222,
+      #222 10px,
+        #333 10px,
+       #333 20px
+      );
+
+
+    width: 20vw;
+
+    text-align: start;
+    margin-top: 0vw;
+    
+    border-color: rgb(255, 255, 255);
+    border-style: dashed;
+}
+
+.Sidebar a {
+    margin: 2vw;  /* Adjust margin to the left for <a> tags */
+    border-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 150%;
+}
+
+.Sidebar li {
+    margin-left: 4vw;
+}
+
+
+.MainContent {
+    flex-grow: 8;
+    
+}
+
+.Header {
+    margin-left: 72.5vw;
+    width: 20vw;
+
+    margin-top: 1vw; /* Removed the space between 1 and vw */
+
+    text-align: center;
+    align-items: right;
+
+    border-color: rgb(4, 9, 83);
+    border-style: dashed    ;
+}
+
+.ContentHelloWorld {
+    margin-left: 5vw;
+    width: 70vw;
+
+    
+    background-color: cadetblue;
+    margin-top: 1vw; /* Removed the space between 1 and vw */
+    margin-left: 22.5vw;
+    
+    color:#000000;
+
+    text-align: center;
+    align-items: center;
+
+    border-color: rgb(44, 43, 43);
+    border-style: dashed;
+}
+
+
+.Content {
+    margin-left: 5vw;
+    width: 70vw;
+
+    
+    background-color: rgb(112, 188, 190);
+    margin-top: 1vw; /* Removed the space between 1 and vw */
+    margin-left: 22.5vw;
+    
+    color:#000000;
+
+    text-align: center;
+    align-items: center;
+
+    border-color: rgb(44, 43, 43);
+    border-style: dashed;
+
+}
+
+.GetApp{
+    margin-left: 5vw;
+    width: 70vw;
+
+    
+    background-color: cadetblue;
+    margin-top: 1vw; /* Removed the space between 1 and vw */
+    margin-left: 22.5vw;
+    
+    color:#000000;
+
+    text-align: center;
+    align-items: center;
+
+    border-color: rgb(255, 255, 255);
+    border-style: dashed;
+}
+
+.Start{
+    margin-left: 22.5vw;
+    width: 70vw;
+
+    
+    background-color: cadetblue;
+    margin-top: 1vw; /* Removed the space between 1 and vw */
+    
+    color:#000000;
+
+    text-align:left;
+    align-items: center;
+
+    border-color: rgb(255, 255, 255);
+    border-style: dashed;
+}
+
+.Contact{
+    margin-left: 5vw;
+    width: 70vw;
+
+    
+    background-color: rgb(32, 52, 53);
+    margin-top: 1vw; /* Removed the space between 1 and vw */
+    margin-left: 0vw;
+    
+    color:#fffbfb;
+
+    text-align: center;
+    align-items: center;
+
+    border-color: rgb(255, 255, 255);
+    border-style:none;
+}
+
+
+
+
+.home:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+    color:white;
+
+}
+
+
+
+.UITutorial:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+}
+
+.WritingTutorial:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    
+}
+
+.CoolFeatures:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+}
+
+.Header:hover{
+    box-shadow: 0px 0px 20px 5px rgba(80, 67, 67, 0.6);
+}
+
+
+.Content:hover, video:hover, .Start:hover, .ContentHelloWorld:hover{
+    animation-name: ContentHoverA;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.6);
+
+}
+
+
+
+.Sidebar:hover {
+    animation-name: SidebarHoverA;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.6);
+
+}
+
+@keyframes SidebarHoverA {
+    0% {
+        background: repeating-linear-gradient(
+            -55deg,
+            #222 0px,
+            #222 10px,
+            #333 10px,
+            #333 20px
+        );
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background: repeating-linear-gradient(
+            -55deg,
+            #222 0px,
+            #222 10px,
+            #333 10px,
+            #333 20px
+        );
+        background-position: 5px 5px;
+    }
+}
+
+
+@keyframes ContentHoverA {
+    0%{
+        color:#ffffff;
+    }
+    100%{
+        color:black;
+    }
+}

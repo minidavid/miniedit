@@ -1,0 +1,248 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg, rgba(1,1,1) 0%, #FFFFFF 100%);
+}
+
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #382661, #22095c, #22095c, #000000);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 3s linear infinite;
+}
+
+.explanationofHeader{
+    font-size: 2.5em;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 2px #000000;
+}
+
+
+
+.Wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.Sidebar {
+    position: fixed;
+    
+    
+    background: repeating-linear-gradient(
+        -55deg,
+        #222,
+      #222 10px,
+        #333 10px,
+       #333 20px
+      );
+
+
+    width: 20vw;
+
+    text-align: start;
+    margin-top: 0vw;
+    
+    border-color: rgb(255, 255, 255);
+    border-style: dashed;
+}
+
+.Sidebar a {
+    margin: 2vw;  /* Adjust margin to the left for <a> tags */
+    border-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 150%;
+}
+
+.Sidebar li {
+    margin-left: 4vw;
+}
+
+
+.MainContent {
+    flex-grow: 8;
+    
+}
+
+.Header {
+    margin-left: 72.5vw;
+    width: 20vw;
+
+    margin-top: 1vw; /* Removed the space between 1 and vw */
+
+    text-align: center;
+    align-items: right;
+
+    border-color: rgb(4, 9, 83);
+    border-style: dashed    ;
+}
+
+.Content {
+    margin-left: 5vw;
+    width: 70vw;
+
+    
+    background-color: burlywood;
+    margin-top: 1vw; /* Removed the space between 1 and vw */
+    margin-left: 22.5vw;
+    
+    color:#000000;
+
+    text-align: center;
+    align-items: center;
+
+    border-color: rgb(44, 43, 43);
+    border-style: solid;
+}
+
+.Content2 {
+    margin-left: 5vw;
+    width: 70vw;
+
+    
+    background-color: rgb(184, 152, 111);
+    margin-top: 1vw; /* Removed the space between 1 and vw */
+    margin-left: 22.5vw;
+    
+    color:#000000;
+
+    text-align: center;
+    align-items: center;
+
+    border-color: rgb(44, 43, 43);
+    border-style: solid;
+    clip-path:inset(20px 20px round 15% 0);
+}
+
+
+
+.Content3, .Content4{
+    margin-left: 5vw;
+    width: 50vw;
+    
+    background-color: rgb(112, 92, 65);
+    margin-top: -0.2em; /* Removed the space between 1 and vw */
+    margin-left: 32.5vw;
+    
+    color:#fffefe;
+
+    text-align: center;
+    align-items: center;
+
+    border-color: rgb(44, 43, 43);
+    border-style: dashed;
+}
+
+.Content3{
+    margin-top: -2em;
+}
+
+
+.home:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+    color:white;
+}
+
+.UITutorial:hover, .WritingTutorial:hover, .CoolFeatures:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+}
+
+.Header:hover{
+    box-shadow: 0px 0px 20px 5px rgba(73, 72, 72, 0.6);
+}
+
+hr{
+    border: 1px dashed #000000;
+}
+
+.Content:hover, .Content2:hover{
+    animation-name: ContentHoverA;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.6);
+}
+
+.Content3:hover{
+    animation-name: ContentHoverTwo;
+    animation-duration: 2s;
+    animation-iteration-count:1;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.6);
+}
+
+
+.Sidebar:hover {
+    animation-name: SidebarHoverA;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.6);
+
+}
+
+@keyframes SidebarHoverA {
+    0% {
+        background: repeating-linear-gradient(
+            -55deg,
+            #222 0px,
+            #222 10px,
+            #333 10px,
+            #333 20px
+        );
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background: repeating-linear-gradient(
+            -55deg,
+            #222 0px,
+            #222 10px,
+            #333 10px,
+            #333 20px
+        );
+        background-position: 5px 5px;
+    }
+}
+
+
+@keyframes ContentHoverA {
+    0%{
+        color:#ffffff;
+        -webkit-filter: url("#wavy");
+        filter: url("#wavy");
+    }
+    50%{
+        -webkit-filter: url("#wavy2");
+        filter: url("#wavy2");
+    }
+    100%{
+        color:black;
+        -webkit-filter: url("#wavy3");
+        filter: url("#wavy3");
+
+    }
+}
+
+@keyframes ContentHoverTwo {
+    0%{
+        color:rgb(112, 92, 65);
+    }
+    100%{
+        color:#FFFFFF;
+
+    }
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
