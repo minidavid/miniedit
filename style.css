@@ -191,7 +191,7 @@ body {
 }
 
 
-.Content:hover, video:hover, .Start:hover, .ContentHelloWorld:hover{
+.Content:hover, iframe:hover, .Start:hover, .ContentHelloWorld:hover{
     animation-name: ContentHoverA;
     animation-duration: 2s;
     animation-iteration-count: 1;
