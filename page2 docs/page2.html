@@ -58,7 +58,11 @@
                         <div class="images">
                           
                             <figure>
-                                <iframe width="560vw" height="315vw" src="https://www.youtube.com/embed/NCihx8iBdiE?si=6cPzov66k-x38Prp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                                <video autoplay muted loop width="60%" height="40%" controls>
+                                    <source width="100%" height="100%" src="../image/page2video.mp4" type="video/mp4">
+                                </video>
+
                             </figure>
                         </div>
         
@@ -98,10 +102,10 @@
                                         
                                     <div class="imageSlider">
 
-                                        <img id="img1" class="menuImg" width="50vw" height="20vw" src="../image/dark mode.mp4" alt="Miniedit Window">
-                                        <img id="img2" class="fileImg" width="200vw" height="100vw" src="../image/FILE.png" alt="Miniedit Window" >
-                                        <img id="img3" class="editImg" width="200vw" height="100vw" src="../image/EDIT.png" alt="Miniedit Window">
-                                        <img id="img4" class="undoImg" width="100%" height="100%" src="../image/Undo.png" alt="Miniedit Window">
+                                        <img id="img1" class="menuImg" width="300vw" height="120vw" src="../image/menu.png" alt="Miniedit Window" >
+                                        <img id="img2" class="fileImg" width="450vw" height="350vw" src="../image/FILE.png" alt="Miniedit Window" >
+                                        <img id="img3" class="editImg" width="450vw" height="250vw" src="../image/EDIT.png" alt="Miniedit Window">
+                                        <img id="img4" class="undoImg" width="250vw" height="150vw" src="../image/Undo.png" alt="Miniedit Window">
 
                                         <video id="img5" autoplay muted loop width="60%" height="40%" controls>
                                                 <source class="undoImg" width="100%" height="100%" src="../image/dark mode.mp4" type="video/mp4">
@@ -170,7 +174,7 @@
         window.addEventListener('scroll', function() {
             
             let scrollY = window.scrollY;
-            let video = document.querySelector('.images iframe');
+            let video = document.querySelector('.images video');
             let image = document.querySelector('img');
             let particle = document.querySelector('.ScrollWheel'); 
 
